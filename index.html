@@ -86,52 +86,72 @@
 		</a>
 	</div>
 
-
-	<section class="slider">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8">
-					<h2>Announcements</h2>
-					<div id="contentContainer">
-						<div id="wrapper">
-							<div id="itemOne" class="content">
-								<p class="slider-announcement">
-									We're thrilled to announce that another REACHer is joining The Nook this week! Warda will be available on Wednesdays for you to come and share your troubles over tea.
-								</p>
-							</div>
-							<div id="itemTwo" class="content">
-								<p class="slider-announcement">
-									Nadeen's session in The Nook will be from 6:00pm-8:00pm tomorrow! Book an appointment here: https://nyuadreach.youcanbook.me
-							</div>
-							<div id="itemThree" class="content">
-								<p class="slider-announcement">
-									Please Note: Abi's session in The Nook will be from 7:00pm-9:00pm tomorrow! Book an appointment here: https://nyuadreach.youcanbook.me
-								</p>
-							</div>
-							<div id="itemFour" class="content">
-								<p class="slider-announcement">
-									Please come equip yourself with the tools to intervene in situations that may pose a threat to people around you. Warda and Abigail hope to see you tomorrow at 7pm in C2-E240
-								</p>
-							</div>
+	<div class="container slider">
+		<div class="row">
+			<div class="col-md-12">
+				<h2 class="section-heading" id="annoying-heading">Announcements</h2>
+				<div id="contentContainer">
+					<div id="wrapper">
+						<div id="itemOne" class="content">
+							<p class="slider-announcement">
+								We're thrilled to announce that another REACHer is joining The Nook this week! Warda will be available on Wednesdays for you to come and share your troubles over tea.
+							</p>
+						</div>
+						<div id="itemTwo" class="content">
+							<p class="slider-announcement">
+								Nadeen's session in The Nook will be from 6:00pm-8:00pm tomorrow! Book an appointment here: https://nyuadreach.youcanbook.me
+						</div>
+						<div id="itemThree" class="content">
+							<p class="slider-announcement">
+								Please Note: Abi's session in The Nook will be from 7:00pm-9:00pm tomorrow! Book an appointment here: https://nyuadreach.youcanbook.me
+							</p>
+						</div>
+						<div id="itemFour" class="content">
+							<p class="slider-announcement">
+								Please come equip yourself with the tools to intervene in situations that may pose a threat to people around you. Warda and Abigail hope to see you tomorrow at 7pm in C2-E240
+							</p>
+						</div>
+						<div id="itemFive" class="content">
+							<p class="slider-announcement">
+								FYI: Liza's session in The Nook will be from 6:00pm-8:00pm tomorrow! Book an appointment here: https://nyuadreach.youcanbook.me
+							</p>
+						</div>
+						<div id="itemSix" class="content">
+							<p class="slider-announcement">
+								The Nook has a brand new REACHer in it! We'll now have appointments on Sunday, with the wonderful Abigail.
+							</p>
+						</div>
+						<div id="itemSeven" class="content">
+							<p class="slider-announcement">
+								Are you having trouble falling asleep? Or feel like you're always sleep-deprived? Bring all your sleep-related concerns to Warda and Mona tomorrow at 7pm in E245.
+							</p>
+						</div>
+						<div id="itemEight" class="content">
+							<p class="slider-announcement">
+								With work piling on top of us and finals fast approaching, never has there been a better time to kick that procrastination habit. Luckily Nadeen and Gigs are leading a session on just that! Monday 14th (Tomorrow) | 8pm | C2-E243
+							</p>
+						</div>
+						<div id="itemNine" class="content">
+							<p class="slider-announcement">
+								We're coming back with another procrastination workshop Monday at 8pm! Join us and bring in any assignments/readings/exams for which you are preparing. Let's finish up the rest of this semester on a productive note! RSVP: bit.ly/procrastinationNYUAD
+							</p>
 						</div>
 					</div>
-					<div id="navLinks">
-						<ul>
-							<li class="itemLinks" data-pos="0px"></li>
-							<li class="itemLinks" data-pos="-275px"></li>
-							<li class="itemLinks" data-pos="-550px"></li>
-							<li class="itemLinks" data-pos="-550px"></li>
-						</ul>
-					</div>
 				</div>
-				<div class="col-md-4">
-
-
+				<div id="navLinks">
+					<ul>
+						<li class="itemLinks" data-pos="0px"></li>
+						<li class="itemLinks" data-pos="-275px"></li>
+						<li class="itemLinks" data-pos="-550px"></li>
+						<li class="itemLinks" data-pos="-825px"></li>
+						<li class="itemLinks" data-pos="-1100px"></li>
+					</ul>
 				</div>
 			</div>
-		</div>
-	</section>
 
+		</div>
+
+	</div>
 
 	<footer class="footer-main">
 		<div class="container-fluid">
@@ -166,52 +186,7 @@
 	<script src="js/jquery-3.1.1.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-	<script>
-		// just querying the DOM...like a boss!
-		var links = document.querySelectorAll(".itemLinks");
-		var wrapper = document.querySelector("#wrapper");
-
-		// the activeLink provides a pointer to the currently displayed item
-		var activeLink = 0;
-
-		// setup the event listeners
-		for (var i = 0; i < links.length; i++) {
-			var link = links[i];
-			link.addEventListener('click', setClickedItem, false);
-
-			// identify the item for the activeLink
-			link.itemID = i;
-		}
-
-		// set first item as active
-		links[activeLink].classList.add("active");
-
-		function setClickedItem(e) {
-			removeActiveLinks();
-
-			var clickedLink = e.target;
-			activeLink = clickedLink.itemID;
-
-			changePosition(clickedLink);
-		}
-
-		function removeActiveLinks() {
-			for (var i = 0; i < links.length; i++) {
-				links[i].classList.remove("active");
-			}
-		}
-
-		// Handle changing the slider position as well as ensure
-		// the correct link is highlighted as being active
-		function changePosition(link) {
-			var position = link.getAttribute("data-pos");
-
-			var translateValue = "translate3d(" + position + ", 0px, 0)";
-			wrapper.style.transform = translateValue;
-
-			link.classList.add("active");
-		}
-	</script>
+	<script src="js/script.js"></script>
 </body>
 
 </html>
