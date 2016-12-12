@@ -1,0 +1,96 @@
+/* carousel */
+
+.carousel-control.left,
+.carousel-control.right {
+	background-image: none;
+	margin-top: 120px !important;
+}
+
+.carousel-inner > .item > img {
+	margin: 0 auto;
+	margin-top: 10 0px !important;
+}
+
+
+/* page 1 slider */
+
+#wrapper {
+	width: 1100px;
+	transform: translate3d(0, 0, 0);
+	margin: auto;
+	transition: transform .5s ease-in-out;
+}
+
+.content {
+	float: left;
+	width: 275px;
+	height: 175px;
+	white-space: normal;
+	background-repeat: no-repeat;
+}
+
+#itemOne {
+	border-right: 2.5px #FDB82B solid;
+	padding: 2px;
+}
+
+#itemTwo {
+	border-right: 2.5px #FDB82B solid;
+	padding: 2px;
+}
+
+#itemThree {
+	border-right: 2.5px #FDB82B solid;
+	padding: 2px;
+}
+
+#itemFour {
+	border-left: 2.5px #FDB82B solid;
+	padding: 2px;
+}
+
+#contentContainer {
+	width: 550px;
+	height: 175px;
+	border: 2.5px #FDB82B solid;
+	overflow: hidden;
+}
+
+#navLinks {
+	text-align: center;
+	width: 550px;
+}
+
+#navLinks ul {
+	margin: 0px;
+	padding: 0px;
+	display: inline-block;
+	margin-top: 6px;
+}
+
+#navLinks ul li {
+	float: left;
+	text-align: center;
+	margin: 10px;
+	list-style: none;
+	cursor: pointer;
+	background-color: #CCCCCC;
+	padding: 5px;
+	border-radius: 50%;
+	border: black 2px solid;
+}
+
+#navLinks ul li:hover {
+	background-color: #FDB82B;
+}
+
+#navLinks ul li.active {
+	background-color: #333333;
+	color: #FFFFFF;
+	outline-width: 2px;
+}
+
+#navLinks ul li.active:hover {
+	background-color: #484848;
+	color: $lighter-base-color;
+}

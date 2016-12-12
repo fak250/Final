@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>An Interesting Title Goes Here</title>
+
+	<style>
+		#wrapper {
+			width: 2200px;
+			transform: translate3d(0, 0, 0);
+			transition: transform .5s ease-in-out;
+		}
+		
+		#contentContainer {
+			width: 1100px;
+			height: 350px;
+			border: 5px black solid;
+			overflow: hidden;
+		}
+		
+		.content {
+			float: left;
+			width: 550px;
+			height: 350px;
+			white-space: normal;
+			background-repeat: no-repeat;
+		}
+		
+		#itemOne {
+			background-color: green;
+			background-image: url("//www.kirupa.com/images/blueSquare.png");
+		}
+		
+		#itemTwo {
+			background-color: red;
+			background-image: url("//www.kirupa.com/images/yellowSquare.png");
+		}
+		
+		#itemThree {
+			background-color: blue;
+			background-image: url("//www.kirupa.com/images/pinkSquare.png");
+		}
+		
+		#itemFour {
+			background-color: yellow;
+			background-image: url("//www.kirupa.com/images/graySquare.png");
+		}
+		
+		#navLinks {
+			text-align: center;
+			width: 550px;
+		}
+		
+		#navLinks ul {
+			margin: 0px;
+			padding: 0px;
+			display: inline-block;
+			margin-top: 6px;
+		}
+		
+		#navLinks ul li {
+			float: left;
+			text-align: center;
+			margin: 10px;
+			list-style: none;
+			cursor: pointer;
+			background-color: #CCCCCC;
+			padding: 5px;
+			border-radius: 50%;
+			border: black 5px solid;
+		}
+		
+		#navLinks ul li:hover {
+			background-color: #FFFF00;
+		}
+		
+		#navLinks ul li.active {
+			background-color: #333333;
+			color: #FFFFFF;
+			outline-width: 7px;
+		}
+		
+		#navLinks ul li.active:hover {
+			background-color: #484848;
+			color: #FFFFFF;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="contentContainer">
+		<div id="wrapper">
+			<div id="itemOne" class="content" data-pos="0px">
+				<p>item 1</p>
+			</div>
+			<div id="itemTwo" class="content" data-pos="-550px">
+				<p>item 2</p>
+			</div>
+			<div id="itemThree" class="content" data-pos="-1100px">
+				<p>item 3</p>
+			</div>
+			<div id="itemFour" class="content" data-pos="-1650px">
+				<p>item 4</p>
+			</div>
+		</div>
+	</div>
+	<button type="button" id="target">next</button>
+	<!--
+	<div id="navLinks">
+		<ul>
+			<li class="itemLinks" data-pos="0px"></li>
+			<li class="itemLinks" data-pos="-550px"></li>
+			<li class="itemLinks" data-pos="-1100px"></li>
+			<li class="itemLinks" data-pos="-1650px"></li>
+		</ul>
+	</div>
+-->
+
+
+
+	<script>
+		var button = document.querySelectorAll("#target");
+		var wrapper = document.querySelector("#wrapper");
+		var x = 0;
+		//looking for all list items with the class itemlinks and the attrivute with the id wrapper
+
+
+		//		var activeLink = 0;
+		//		//pointer to the content currently being displayed
+
+		// setup the event listeners so for arrow wont need a for loop
+//		for (var i = 0; i < links.length; i++) {
+//			var link = links[i];
+//			link.addEventListener('click', setClickedItem, false);
+//
+//			// identify the item for the activeLink
+//			link.itemID = i;
+//		}
+
+		button.addEventListener('click', function() {
+			var x = x + 1;
+		})
+
+		// set first item as active
+		links[activeLink].classList.add("active");
+
+		function setClickedItem(e) {
+			removeActiveLinks();
+
+			var clickedLink = e.target;
+			activeLink = clickedLink.itemID;
+
+			changePosition(clickedLink);
+		}
+
+		function removeActiveLinks() {
+			for (var i = 0; i < links.length; i++) {
+				links[i].classList.remove("active");
+			}
+		}
+
+		// Handle changing the slider position as well as ensure
+		// the correct link is highlighted as being active
+		function changePosition(link) {
+			var position = link.getAttribute("data-pos");
+
+			var translateValue = "translate3d(" + position + ", 0px, 0)";
+			wrapper.style.transform = translateValue;
+
+			link.classList.add("active");
+		}
+	</script>
+</body>
+
+</html>

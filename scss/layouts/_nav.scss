@@ -1,0 +1,36 @@
+/* Navbar */
+
+.navbar{
+	width:100%;
+	margin: auto;
+	background-color: $darker-base-color;
+	
+	a{
+		color:black !important;
+		font-size: 1em;
+		letter-spacing:-0.1px;
+		
+	}
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+	background-color: $lighter-base-color;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+	background-color: $lighter-base-color;
+}
+
+footer{
+	background-color: #FDB82B;
+	margin: auto;
+	width: 100%;
+}
+
+@media only screen and (max-width: 950px) {
+    footer.footer-main {
+        display: none;
+	}
+}
+
+

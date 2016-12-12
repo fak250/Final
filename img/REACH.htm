@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<!-- saved from url=(0082)file:///Users/student/Desktop/Intro%20to%20Web%20App%20Devlopment/Final/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./REACH_files/bootstrap.min.css">
+	<link href="./REACH_files/font-awesome.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="./REACH_files/style.css">
+	<title>REACH</title>
+	<style>
+		#wrapper {
+			width: 1100px;
+			transform: translate3d(0, 0, 0);
+			margin: auto;
+			transition: transform .5s ease-in-out;
+		}
+		
+		.content {
+			float: left;
+			width: 275px;
+			height: 175px;
+			white-space: normal;
+			background-repeat: no-repeat;
+		}
+		
+		#itemOne {
+			border-right: 2.5px #FDB82B solid;
+			padding: 2px;
+		}
+		
+		#itemTwo {
+			border-right: 2.5px #FDB82B solid;
+			padding: 2px;
+		}
+		
+		#itemThree {
+			border-right: 2.5px #FDB82B solid;
+			padding: 2px;
+		}
+		
+		#itemFour {
+			border-left: 2.5px #FDB82B solid;
+			padding: 2px;
+		}
+		
+		#contentContainer {
+			width: 550px;
+			height: 175px;
+			border: 2.5px #FDB82B solid;
+			overflow: hidden;
+		}
+		
+		#navLinks {
+			text-align: center;
+			width: 550px;
+		}
+		
+		#navLinks ul {
+			margin: 0px;
+			padding: 0px;
+			display: inline-block;
+			margin-top: 6px;
+		}
+		
+		#navLinks ul li {
+			float: left;
+			text-align: center;
+			margin: 10px;
+			list-style: none;
+			cursor: pointer;
+			background-color: #CCCCCC;
+			padding: 5px;
+			border-radius: 50%;
+			border: black 2px solid;
+		}
+		
+		#navLinks ul li:hover {
+			background-color: #FDB82B;
+		}
+		
+		#navLinks ul li.active {
+			background-color: #333333;
+			color: #FFFFFF;
+			outline-width: 2px;
+		}
+		
+		#navLinks ul li.active:hover {
+			background-color: #484848;
+			color: #FFFFFF;
+		}
+	</style>
+</head>
+
+<body>
+	<header class="header-main">
+		<!--
+		<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#"><img src="img/REACH%20logo%20HD+.png" alt="REACH" id="logo"></a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="blog.html">Resources</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+-->
+
+
+	</header>
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-container">
+					<span class="sr-only">Show and Hide the Navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="file:///Users/student/Desktop/Intro%20to%20Web%20App%20Devlopment/Final/index.html">
+					<img src="./REACH_files/REACH logo HD+.png" style="">
+				</a>
+			</div>
+			<div class="collapse navbar-collapse" id="navbar-container">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="file:///Users/student/Desktop/Intro%20to%20Web%20App%20Devlopment/Final/index.html">Home</a></li>
+					<li><a href="file:///Users/student/Desktop/Intro%20to%20Web%20App%20Devlopment/Final/About.html">About Us</a></li>
+					<li><a href="file:///Users/student/Desktop/Intro%20to%20Web%20App%20Devlopment/Final/blog.html">Resources</a></li>
+					<li><a href="file:///Users/student/Desktop/Intro%20to%20Web%20App%20Devlopment/Final/contact.html">Contact Us</a></li>
+				</ul>
+
+			</div>
+
+
+		</div>
+	</nav>
+
+	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#carousel-example-generic" data-slide-to="0" class=""></li>
+			<li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+			<li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+			<li data-target="#carousel-example-generic" data-slide-to="3" class="active"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="4"></li>
+
+		</ol>
+
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner" role="listbox">
+			<div class="item">
+				<img src="./REACH_files/Carousel_img1.JPG" alt="..." class="carousel-img" width="100%">
+
+			</div>
+			<div class="item">
+				<img src="./REACH_files/Carousel_img2.jpg" alt="..." class="carousel-img" width="100%">
+
+			</div>
+			<div class="item">
+				<img src="./REACH_files/Carousel_img3.JPG" alt="..." class="carousel-img" width="100%">
+
+			</div>
+			<div class="item active">
+				<img src="./REACH_files/Carousel_img4.JPG" alt="..." class="carousel-img" width="100%">
+
+			</div>
+
+		</div>
+
+		<!-- Controls -->
+		<a class="left carousel-control" href="file:///Users/student/Desktop/Intro%20to%20Web%20App%20Devlopment/Final/index.html#carousel-example-generic" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="file:///Users/student/Desktop/Intro%20to%20Web%20App%20Devlopment/Final/index.html#carousel-example-generic" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+
+
+	<section class="slider">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					<h2>Announcements</h2>
+					<div id="contentContainer">
+						<div id="wrapper">
+							<div id="itemOne" class="content">
+								<p class="slider-announcement">
+									We're thrilled to announce that another REACHer is joining The Nook this week! Warda will be available on Wednesdays for you to come and share your troubles over tea.
+								</p>
+							</div>
+							<div id="itemTwo" class="content">
+								<p class="slider-announcement">
+									Nadeen's session in The Nook will be from 6:00pm-8:00pm tomorrow! Book an appointment here: https://nyuadreach.youcanbook.me
+							</p></div>
+							<div id="itemThree" class="content">
+								<p class="slider-announcement">
+									Please Note: Abi's session in The Nook will be from 7:00pm-9:00pm tomorrow! Book an appointment here: https://nyuadreach.youcanbook.me
+								</p>
+							</div>
+							<div id="itemFour" class="content">
+								<p class="slider-announcement">
+									Please come equip yourself with the tools to intervene in situations that may pose a threat to people around you. Warda and Abigail hope to see you tomorrow at 7pm in C2-E240
+								</p>
+							</div>
+						</div>
+					</div>
+					<div id="navLinks">
+						<ul>
+							<li class="itemLinks active" data-pos="0px"></li>
+							<li class="itemLinks" data-pos="-275px"></li>
+							<li class="itemLinks" data-pos="-550px"></li>
+							<li class="itemLinks" data-pos="-550px"></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-4">
+
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<footer class="footer-main">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<ul>
+						<li class="footer-link"><a href="file:///Users/student/Desktop/Intro%20to%20Web%20App%20Devlopment/Final/About.html">About us</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul>
+						<li><a href="file:///Users/student/Desktop/Intro%20to%20Web%20App%20Devlopment/Final/blog.html">Our Blog</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul>
+						<li><a href="file:///Users/student/Desktop/Intro%20to%20Web%20App%20Devlopment/Final/events.html">What we do</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul>
+						<li><a href="file:///Users/student/Desktop/Intro%20to%20Web%20App%20Devlopment/Final/contact.html">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+	<script src="./REACH_files/jquery-3.1.1.js"></script>
+	<script src="./REACH_files/jquery.min.js"></script>
+	<script src="./REACH_files/bootstrap.min.js"></script>
+	<script>
+		// just querying the DOM...like a boss!
+		var links = document.querySelectorAll(".itemLinks");
+		var wrapper = document.querySelector("#wrapper");
+
+		// the activeLink provides a pointer to the currently displayed item
+		var activeLink = 0;
+
+		// setup the event listeners
+		for (var i = 0; i < links.length; i++) {
+			var link = links[i];
+			link.addEventListener('click', setClickedItem, false);
+
+			// identify the item for the activeLink
+			link.itemID = i;
+		}
+
+		// set first item as active
+		links[activeLink].classList.add("active");
+
+		function setClickedItem(e) {
+			removeActiveLinks();
+
+			var clickedLink = e.target;
+			activeLink = clickedLink.itemID;
+
+			changePosition(clickedLink);
+		}
+
+		function removeActiveLinks() {
+			for (var i = 0; i < links.length; i++) {
+				links[i].classList.remove("active");
+			}
+		}
+
+		// Handle changing the slider position as well as ensure
+		// the correct link is highlighted as being active
+		function changePosition(link) {
+			var position = link.getAttribute("data-pos");
+
+			var translateValue = "translate3d(" + position + ", 0px, 0)";
+			wrapper.style.transform = translateValue;
+
+			link.classList.add("active");
+		}
+	</script>
+
+
+</body></html>
