@@ -1,15 +1,10 @@
 @import "custom-variables";
 @import "base/mixins";
-@import "base/normalize";
 @import "base/base";
 
-@import "modules/typography";
-@import "modules/buttons";
-@import "modules/blocks";
-@import "modules/sections";
-@import "modules/components";
 
-@import "layouts/header";
-@import "layouts/footer";
+@import "modules/sections";
+
+
 @import "layouts/nav";
 

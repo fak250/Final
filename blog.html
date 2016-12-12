@@ -2,48 +2,17 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
+	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>REACH | Resources</title>
-	<!-- Bootstrap core CSS -->
-	<link href="css/bootstrap.css" rel="stylesheet">
-	<!-- Custom styles for this template -->
-	<link href="css/font-awesome.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" type='text/css'>
-	<link href="css/main.css" rel="stylesheet">
-
-	<style>
-		.ticker {
-			width: 400px;
-			height: 200px;
-			overflow: hidden;
-			border: 1px solid #DDD;
-			border-radius: 5px;
-			box-shadow: 0px 0px 5px #DDD;
-			background-color: #F5F3E5;
-			text-align: left;
-		}
-		
-		.ticker h3 {
-			padding: 0 0 10px 10px;
-			border-bottom: 1px solid #A7A7A7;
-		}
-		
-		.ticker ul {
-			list-style: none;
-			padding: 0;
-			margin: 0;
-			font-style: italic;
-		}
-		
-		.ticker ul li {
-			list-style: none;
-			height: 50px;
-			padding: 7px;
-			border-bottom: 1px solid #D6CFB8;
-		}
-	</style>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<title>REACH</title>
 </head>
 
 <body>
@@ -65,10 +34,11 @@
 			</div>
 			<div class="collapse navbar-collapse" id="navbar-container">
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="index.html">Home</a></li>
-					<li><a href="About.html">About Us</a></li>
-					<li><a href="blog.html">Resources</a></li>
-					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="index.html">About Us</a></li>
+					<li class="active"><a href="blog.html">Resources</a></li>
+					<li><a href="events.html">Events</a></li>
+					<li><a href="#">Contact Us</a></li>
 				</ul>
 
 			</div>
@@ -81,7 +51,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h2>Take a dig into our Resources for you!</h2>
+					<h1>Take a dig into our Resources for you!</h1>
 				</div>
 			</div>
 		</div>
@@ -104,7 +74,7 @@
 					</div>
 
 					<div class="blog-post">
-						<h2 class="Blog_entry_heading">Nook Faqs</h2>
+						<h2 class="Blog_entry_heading page-header">Nook Faqs</h2>
 						<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FREACHatNYUAD%2Fvideos%2F700206643467481%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true" class="blog_video" id="nook_video"></iframe>
 						<p>Still not quite sure what The Nook is? Wanting to visit us but worried about sharing your problem? Fear not, REACH members Nadeen, Abigail and Liza have put together answers to some questions that have been thrown our way. If there's anything missing, don't hesitate to reach out and email: nyuad.REACH@nyu.edu. Book an appointment here: https://nyuadreach.youcanbook.me/ We hope to see you in there soon </p>
 					</div>
@@ -115,7 +85,7 @@
 					</div>
 
 					<div class="blog-post">
-						<h2 class="page-header">The dreaded FOMO</h2>
+						<h2 class="page-header">The Dreaded FOMO</h2>
 						<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FREACHatNYUAD%2Fvideos%2F709267735894705%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true" class="blog_video" id="liza_video"></iframe>
 						<p>In the second of the REACH self care vlogs, Liza offers up some solutions to the dreaded FOMO...</p>
 					</div>
@@ -126,23 +96,27 @@
 					</div>
 				</div>
 				<div class="col-md-4">
+					<div class="dummy dummy_tabs">
 					<!-- Tab Widget -->
 					<div class="tab tab-light">
-						<ul class="nav nav-tabs" role="tablist">
-							<li><a href="#services" role="tab" data-toggle="tab">Report</a></li>
-							<li class="active"><a href="#about" role="tab" data-toggle="tab">Share</a></li>
+						<ul class="nav nav-tabs">
+							<li class="active"><a href="#report" role="tab" data-toggle="tab">Report</a></li>
+							<li ><a href="#share" role="tab" data-toggle="tab">Share</a></li>
 							<li><a href="#support" role="tab" data-toggle="tab">Support</a></li>
 						</ul>
 
 						<!-- Tab panes -->
 						<div class="tab-content">
-							<div class="tab-pane" id="services">
+							<div class="tab-pane fade-in active" id="report">
 								<h3>See Something? Report</h3>
-								<p>Contact Public Safety: nyuad.publicsafety247@nyu.edu
-									<br>A4 1st floor
-									<br>02-628-7777</p>
+								<p>Contact Public Safety: nyuad.publicsafety247@nyu.edu</p>
+									<ul>
+									<li>A4 1st floor</li>
+									<li>02-628-7777</li>
+								</ul>
+								
 							</div>
-							<div class="tab-pane active" id="about">
+							<div class="tab-pane fade" id="share">
 								<h3>Share</h3>
 								<p>Want to Talk to Someone?</p>
 								<ul>
@@ -152,7 +126,7 @@
 									<li>Reach us on our facebook <a href="https://www.facebook.com/REACHatNYUAD/?fref=ts">page</a>.</li>
 								</ul>
 							</div>
-							<div class="tab-pane" id="Contact">
+							<div class="tab-pane fade" id="support">
 								<h3>Additional Points of Contact</h3>
 								<ul>
 									<li>Tina Wadhwa-Associate Director of Mental Health Promotion and Sexual Misconduct Support Services tina.wadhwa@nyu.edu</li>
@@ -162,14 +136,18 @@
 							</div>
 						</div>
 					</div>
-					
+						</div>
+				</div>
+			</div>
+<!--
+
 					<div class="block block-primary-head no-pad">
 						<div class="ticker">
 							<h3><i class="fa fa-comment"></i> Self Care Tips</h3>
 							<div class="block-content">
 								<ul class="list-comments">
 									<li>
-								<p>Self Care #1: Go to the beach. I know - you're busy, there are papers to write and exams to cram for, you don't have time for the beach right now. But think about how amazing the sand will feel on your bare feet, and won't you work harder if you give yourself a break?</p>
+										<p>Self Care #1: Go to the beach. I know - you're busy, there are papers to write and exams to cram for, you don't have time for the beach right now. But think about how amazing the sand will feel on your bare feet, and won't you work harder if you give yourself a break?</p>
 									</li>
 									<div class="clearfix self_care_tip"></div>
 									<li>
@@ -300,6 +278,7 @@
 			</div>
 		</div>
 	</section>
+-->
 
 	<footer class="footer-main">
 		<div class="container">
@@ -331,8 +310,8 @@
 	<!-- Bootstrap core JavaScript
     ================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->
-	<script src="js/jquery.js"></script>
-	<script src="js/bootstrap.js"></script>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
 	<script type="text/javascript">
 		function ticker() {
 			$('#ticker li:first').slideUp(function () {

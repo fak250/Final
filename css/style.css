@@ -1,12 +1,6 @@
 /*font colors and sizes*/
 /* background colors */
 /*mixins*/
-h1, h2, h3, h4, h5 {
-  margin-top: 0px; }
-
-.page-header {
-  margin-top: 30px; }
-
 body {
   font-family: "Segoe UI", "Segoe WF", "Segoe Regular", sans-serif;
   font-size: 15px;
@@ -178,7 +172,11 @@ input, textarea, button {
   background-color: #FDE4A4;
   color: #FDE4A4; }
 
-.block, .block-primary, .block-secondary, .block-light, .block-dark {
+.block,
+.block-primary,
+.block-secondary,
+.block-light,
+.block-dark {
   padding: 15px;
   margin-bottom: 15px; }
 
@@ -190,6 +188,56 @@ input, textarea, button {
 
 .block-center {
   text-align: center !important; }
+
+.col-md-4 img {
+  width: 100%; }
+
+/*slider blog page*/
+.page-header {
+  border-color: #FDB82B !important; }
+
+.tab-primary .tab-pane, .tab-primary .nav-tabs > li.active > a, .tab-primary .nav-tabs > li.active > a:hover, .tab-primary .nav-tabs > li.active > a:focus {
+  background-color: #FDB82B;
+  color: #ffffff; }
+
+.nav-tabs {
+  border-bottom: 1px solid #FDB82B; }
+
+.nav > li > a:focus, .nav > li > a:hover {
+  background-color: #FDB82B; }
+
+.dummy-tabs {
+  line-height: 200%; }
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+  background-color: #FDB82B;
+  color: white; }
+
+.ticker {
+  width: 400px;
+  height: 200px;
+  overflow: hidden;
+  border: 1px solid #DDD;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #DDD;
+  background-color: #F5F3E5;
+  text-align: left; }
+
+.ticker h3 {
+  padding: 0 0 10px 10px;
+  border-bottom: 1px solid #A7A7A7; }
+
+.ticker ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-style: italic; }
+
+.ticker ul li {
+  list-style: none;
+  height: 50px;
+  padding: 7px;
+  border-bottom: 1px solid #D6CFB8; }
 
 /* Navbar */
 .navbar {
