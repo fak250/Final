@@ -59,60 +59,19 @@
 	padding: 0.625em;
 }
 
-//#itemOne {
-//	border-right: 2.5px #FDB82B solid;
-//	padding: 0.625em;
-//}
-//
-//#itemTwo {
-//	border-right: 2.5px #FDB82B solid;
-//	padding: 0.625em;
-//}
-//
-//#itemThree {
-//	border-right: 2.5px #FDB82B solid;
-//	padding: 0.625em;
-//}
-//
-//#itemFour{
-//	border-left: 2.5px #FDB82B solid;
-//	padding: 0.625em;
-//}
-//
-//#itemFive
-//	{
-//	border-left: 2.5px #FDB82B solid;
-//	padding: 0.625em;
-//}
-//
-//#itemSix
-//	{
-//	border-left: 2.5px #FDB82B solid;
-//	padding: 0.625em;
-//}
-//
-//#itemSeven
-//	{
-//	border-left: 2.5px #FDB82B solid;
-//	padding: 0.625em;
-//}
-//
-//#itemEight
-//	{
-//	border-left: 2.5px #FDB82B solid;
-//	padding: 0.625em;
-//}
-//
-//#itemNine
-//	{
-//	border-left: 2.5px #FDB82B solid;
-//	padding: 0.625em;
-//}
-//
-//
 
+.section{
+		font-family: "gothic";
+		background-color: $lighter-base-color;
+//		border: $darker-base-color;
+//		border-style: solid;
+//		border-bottom-width: thin;
+		color: $heading-color;
+	p{
+		color: black;
+	}
 
-
+}
 
 #contentContainer {
 	width: 1100px;
@@ -122,16 +81,41 @@
 	margin: auto;
 }
 
+.section_left{
+	border-right-width: 0px;
+}
+
+.row{
+	margin-top:10px;
+}
+
+
 @media only screen and (max-width: 1100px) {
 	#contentContainer {
 	width: 825px;
 	height: 175px;
 	border: 2.5px #FDB82B solid;
 	overflow: hidden;
+		
 }
 	#annoying-heading{
 		margin-left: 55px;
 	}
+	
+	.dummy{
+		height: 320px !important;
+		margin: 10px;
+	
+	}
+//	.video{
+//	display: none;
+//}
+}
+
+
+.jumbotron_p{
+	color: black;
+	font-size: 1.8em !important;
 }
 
 @media only screen and (max-width: 990px) {
@@ -144,12 +128,36 @@
 	#annoying-heading{
 		margin-left: 80px;
 	}
+	.dummy_video{
+		height: 480px !important;
+	}
 }
 
 @media only screen and (max-width: 588px) {
 	.slider{
 		display: none;
 }
+}
+
+
+.dummy{
+	width: 100%;
+	background-color: white;
+	border: $darker-base-color;
+		border-style: solid;
+		border-width: 2px;
+	height: 380px;
+	padding: 5px;
+	font-size: larger;
+}
+.video{
+	width: 100%;
+	height: 100%;
+}
+
+.jumbotron{
+	height: 100%;
+	background-color: white !important;
 }
 
 #navLinks {
@@ -190,4 +198,21 @@
 #navLinks ul li.active:hover {
 	background-color: $lighter-base-color;
 	color: $lighter-base-color;
+}
+
+.block, .block-primary, .block-secondary, .block-light, .block-dark {
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.block-image img {
+  width: 100%;
+}
+
+.block-border {
+  border: 2px solid $darker-base-color;
+}
+
+.block-center {
+  text-align: center !important;
 }

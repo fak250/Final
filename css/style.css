@@ -74,12 +74,25 @@ input, textarea, button {
   border-right: 2.5px #FDB82B solid;
   padding: 0.625em; }
 
+.section {
+  font-family: "gothic";
+  background-color: #FDE4A4;
+  color: #FD9426; }
+  .section p {
+    color: black; }
+
 #contentContainer {
   width: 1100px;
   height: 175px;
   border: 2.5px #FDB82B solid;
   overflow: hidden;
   margin: auto; }
+
+.section_left {
+  border-right-width: 0px; }
+
+.row {
+  margin-top: 10px; }
 
 @media only screen and (max-width: 1100px) {
   #contentContainer {
@@ -89,7 +102,15 @@ input, textarea, button {
     overflow: hidden; }
 
   #annoying-heading {
-    margin-left: 55px; } }
+    margin-left: 55px; }
+
+  .dummy {
+    height: 320px !important;
+    margin: 10px; } }
+.jumbotron_p {
+  color: black;
+  font-size: 1.8em !important; }
+
 @media only screen and (max-width: 990px) {
   #contentContainer {
     width: 550px;
@@ -98,10 +119,31 @@ input, textarea, button {
     overflow: hidden; }
 
   #annoying-heading {
-    margin-left: 80px; } }
+    margin-left: 80px; }
+
+  .dummy_video {
+    height: 480px !important; } }
 @media only screen and (max-width: 588px) {
   .slider {
     display: none; } }
+.dummy {
+  width: 100%;
+  background-color: white;
+  border: #FDB82B;
+  border-style: solid;
+  border-width: 2px;
+  height: 380px;
+  padding: 5px;
+  font-size: larger; }
+
+.video {
+  width: 100%;
+  height: 100%; }
+
+.jumbotron {
+  height: 100%;
+  background-color: white !important; }
+
 #navLinks {
   text-align: center;
   width: 550px;
@@ -136,6 +178,19 @@ input, textarea, button {
   background-color: #FDE4A4;
   color: #FDE4A4; }
 
+.block, .block-primary, .block-secondary, .block-light, .block-dark {
+  padding: 15px;
+  margin-bottom: 15px; }
+
+.block-image img {
+  width: 100%; }
+
+.block-border {
+  border: 2px solid #FDB82B; }
+
+.block-center {
+  text-align: center !important; }
+
 /* Navbar */
 .navbar {
   width: 100%;
@@ -157,6 +212,9 @@ footer {
   margin: auto;
   width: 100%; }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 990px) {
   footer.footer-main {
+    display: none; }
+
+  .jumbotron_main {
     display: none; } }
