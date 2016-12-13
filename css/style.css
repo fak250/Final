@@ -14,11 +14,6 @@ a {
 ul, li {
   list-style: none; }
 
-input, textarea, button {
-  border-radius: 0px;
-  -mox-border-radius: 0px;
-  -webkit-border-radius: 0px; }
-
 #logo {
   margin-top: 0px;
   top: 0px;
@@ -47,7 +42,6 @@ input, textarea, button {
     background-color: white;
     border: #FDB82B;
     border-style: solid;
-    border-bottom-width: thin;
     color: #FD9426; }
     .slider .col-md-12 #wrapper {
       color: black;
@@ -117,22 +111,56 @@ input, textarea, button {
 
   .dummy_video {
     height: 480px !important; } }
+@media only screen and (max-width: 700px) {
+  .dummy_video {
+    height: 440px !important; }
+
+  #annoying-heading {
+    margin-left: 3.5%; } }
 @media only screen and (max-width: 588px) {
   .slider {
+    display: none; }
+
+  .dummy_video {
+    height: 380px !important; } }
+@media only screen and (max-width: 500px) {
+  .dummy {
+    font-size: 10px !important; }
+
+  .dummy_video {
     display: none; } }
+@media only screen and (max-width: 320px) {
+  .dummy {
+    line-height: 1.3em; } }
+.content_responsive {
+  margin: 5px; }
+
 .dummy {
   width: 100%;
   background-color: white;
   border: #FDB82B;
   border-style: solid;
   border-width: 2px;
-  height: 380px;
-  padding: 5px;
+  padding: 10px;
   font-size: larger; }
 
 .video {
   width: 100%;
   height: 100%; }
+
+.dummy_video {
+  position: relative; }
+  .dummy_video:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 75%; }
+  .dummy_video > .content_responsive {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
 
 .jumbotron {
   height: 100%;

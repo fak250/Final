@@ -1,31 +1,18 @@
 /*mixins*/
 
-@mixin border-radius($radius) {
-	border-radius: $radius;
-	-mox-border-radius: $radius;
-	-webkit-border-radius: $radius;
-}
-
-@mixin add-border($size, $color, $position) {
-	@if $position=='all' {
-		border: $size solid $color;
-	}
-	@else if $position=='top' {
-		border-top: $size solid $color;
-	}
-	@else if $position=='bottom' {
-		border-top: $size solid $color;
-	}
-	@else if $position=='right' {
-		border-top: $size solid $color;
-	}
-	@else if $position=='left' {
-		border-top: $size solid $color;
-	}
-	@else if $position=='top-bottom' {
-		border-top: $size solid $color;
-	}
-	@else if $position=='right-left' {
-		border-top: $size solid $color;
-	}
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+  > .content_responsive {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 }
