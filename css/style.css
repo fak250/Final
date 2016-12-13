@@ -69,6 +69,9 @@ ul, li {
   .section p {
     color: black; }
 
+#doggy {
+  margin-bottom: 5px; }
+
 #contentContainer {
   width: 1100px;
   height: 175px;
@@ -81,6 +84,12 @@ ul, li {
 
 .row {
   margin-top: 10px; }
+
+.main-heading {
+  color: black !important;
+  margin: auto !important;
+  text-decoration: none !important;
+  background-color: #FDB82B; }
 
 @media only screen and (max-width: 1100px) {
   #contentContainer {
@@ -132,6 +141,9 @@ ul, li {
 @media only screen and (max-width: 320px) {
   .dummy {
     line-height: 1.3em; } }
+@media only screen and (max-width: 991px) {
+  .events h2 {
+    margin-top: 10px !important; } }
 .content_responsive {
   margin: 5px; }
 
@@ -224,22 +236,62 @@ ul, li {
 .page-header {
   border-color: #FDB82B !important; }
 
-.tab-primary .tab-pane, .tab-primary .nav-tabs > li.active > a, .tab-primary .nav-tabs > li.active > a:hover, .tab-primary .nav-tabs > li.active > a:focus {
+.tab-primary .tab-pane,
+.tab-primary .nav-tabs > li.active > a,
+.tab-primary .nav-tabs > li.active > a:hover,
+.tab-primary .nav-tabs > li.active > a:focus {
   background-color: #FDB82B;
   color: #ffffff; }
 
 .nav-tabs {
   border-bottom: 1px solid #FDB82B; }
 
-.nav > li > a:focus, .nav > li > a:hover {
+#first_entry {
+  margin-top: 5px; }
+
+.nav > li > a:focus,
+.nav > li > a:hover {
   background-color: #FDB82B; }
 
 .dummy-tabs {
   line-height: 200%; }
 
-.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
   background-color: #FDB82B;
   color: white; }
+
+.events h2 {
+  background-color: #FDB82B;
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: #FDE4A4;
+  margin: 0px; }
+
+.modal-open .modal,
+.btn:focus,
+a:focus {
+  outline: none !important; }
+
+.btn-info {
+  background-color: #FDB82B;
+  border-color: white;
+  border-width: medium; }
+
+.btn-info:hover {
+  background-color: #FDB82B;
+  border-color: white;
+  border-width: medium; }
+
+.post-meta {
+  border-bottom-width: medium;
+  border-color: white;
+  border-style: solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 10px; }
 
 .ticker {
   width: 400px;
@@ -288,7 +340,7 @@ footer {
   margin: auto;
   width: 100%; }
 
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 991px) {
   footer.footer-main {
     display: none; }
 

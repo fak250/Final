@@ -63,6 +63,10 @@
 	}
 }
 
+#doggy {
+	margin-bottom: 5px;
+}
+
 #contentContainer {
 	width: 1100px;
 	height: 175px;
@@ -77,6 +81,13 @@
 
 .row {
 	margin-top: 10px;
+}
+
+.main-heading {
+	color: black !important;
+	margin: auto !important;
+	text-decoration: none !important;
+	background-color: $darker-base-color;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -122,7 +133,6 @@
 	.dummy_video {
 		height: 440px !important;
 	}
-	
 	#annoying-heading {
 		margin-left: 3.5%;
 	}
@@ -141,7 +151,6 @@
 	.dummy {
 		font-size: 10px !important;
 	}
-	
 	.dummy_video {
 		display: none;
 	}
@@ -153,9 +162,18 @@
 	}
 }
 
-.content_responsive{
+@media only screen and (max-width: 991px) {
+	.events {
+		h2 {
+			margin-top: 10px !important;
+		}
+	}
+}
+
+.content_responsive {
 	margin: 5px;
 }
+
 .dummy {
 	width: 100%;
 	background-color: white;
@@ -166,15 +184,13 @@
 	font-size: larger;
 }
 
-
-
 .video {
 	width: 100%;
 	height: 100%;
 }
 
 .dummy_video {
-  @include aspect-ratio(4, 3);
+	@include aspect-ratio(4, 3);
 }
 
 .jumbotron {
@@ -243,38 +259,85 @@
 	text-align: center !important;
 }
 
-.col-md-4 img{
+.col-md-4 img {
 	width: 100%;
 }
+
 
 /*slider blog page*/
 
 .page-header {
-    border-color: $darker-base-color !important;
+	border-color: $darker-base-color !important;
 }
 
-.tab-primary .tab-pane, .tab-primary .nav-tabs > li.active > a, .tab-primary .nav-tabs > li.active > a:hover, .tab-primary .nav-tabs > li.active > a:focus {
-  background-color: $darker-base-color;
-  color: #ffffff;
+.tab-primary .tab-pane,
+.tab-primary .nav-tabs > li.active > a,
+.tab-primary .nav-tabs > li.active > a:hover,
+.tab-primary .nav-tabs > li.active > a:focus {
+	background-color: $darker-base-color;
+	color: #ffffff;
 }
 
-.nav-tabs{
+.nav-tabs {
 	border-bottom: 1px solid $darker-base-color;
 }
 
-.nav>li>a:focus, .nav>li>a:hover{
+#first_entry{
+	margin-top: 5px;
+}
+.nav>li>a:focus,
+.nav>li>a:hover {
 	background-color: $darker-base-color;
 }
 
-.dummy-tabs{
+.dummy-tabs {
 	line-height: 200%;
-
 }
 
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover {
 	background-color: $darker-base-color;
 	color: white;
 }
+
+.events{
+	h2 {
+		background-color: $darker-base-color;
+		color: white;
+		text-decoration: underline;
+		text-decoration-color: $lighter-base-color;
+		margin: 0px;
+	}
+}
+
+.modal-open .modal,
+.btn:focus,
+a:focus {
+	outline: none!important
+}
+
+.btn-info {
+	background-color: $darker-base-color;
+	border-color: white;
+	border-width: medium;
+}
+
+.btn-info:hover {
+	background-color: $darker-base-color;
+	border-color: white;
+	border-width: medium;
+}
+
+.post-meta{border-bottom-width: medium;
+    border-color: white;
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 10px;
+}
+
 .ticker {
 	width: 400px;
 	height: 200px;
