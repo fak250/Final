@@ -43,41 +43,4 @@
 			link.classList.add("active");
 		}
 
-		//
-		// The code for sliding the content automatically
-		//
-		var timeoutID;
-
-		function startTimer() {
-			// wait 2 seconds before calling goInactive
-			timeoutID = window.setInterval(goToNextItem, 2000);
-		}
-		startTimer();
-
-		function resetTimer() {
-			window.clearInterval(timeoutID);
-			startTimer();
-		}
-
-		function goToNextItem() {
-			removeActiveLinks();
-
-			if (activeLink < links.length - 1) {
-				activeLink++;
-			} else {
-				activeLink = 0;
-			}
-
-			var newLink = links[activeLink];
-			changePosition(newLink);
-		}
-
-		function setClickedItem(e) {
-			removeActiveLinks();
-			resetTimer();
-
-			var clickedLink = e.target;
-			activeLink = clickedLink.itemID;
-
-			changePosition(clickedLink);
-		}
+		

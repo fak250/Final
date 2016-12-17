@@ -1,11 +1,17 @@
 body{
-	font-family:$base-font-family;
+	font-family:$heading-fonts;
 	
 	font-size: $base-font-size;
 	line-height: 1.7em;
 	color: black;
 	background-color: $lighter-base-color;
 }
+
+h1,h2,h3,h4{
+	font-family:$heading-fonts;
+}
+
+
 
 a{
 	color:black;

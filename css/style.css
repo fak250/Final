@@ -2,11 +2,14 @@
 /* background colors */
 /*mixins*/
 body {
-  font-family: "Segoe UI", "Segoe WF", "Segoe Regular", sans-serif;
+  font-family: "Gothic";
   font-size: 15px;
   line-height: 1.7em;
   color: black;
   background-color: #FDE4A4; }
+
+h1, h2, h3, h4 {
+  font-family: "Gothic"; }
 
 a {
   color: black; }
@@ -38,7 +41,6 @@ ul, li {
   .slider .h2 {
     color: #FDB82B !important; }
   .slider .col-md-12 {
-    font-family: "gothic";
     background-color: white;
     border: #FDB82B;
     border-style: solid;
@@ -63,7 +65,6 @@ ul, li {
   padding: 0.625em; }
 
 .section {
-  font-family: "gothic";
   background-color: #FDE4A4;
   color: #FD9426; }
   .section p {
@@ -153,8 +154,17 @@ ul, li {
   border: #FDB82B;
   border-style: solid;
   border-width: 2px;
-  padding: 10px;
+  padding: 12px;
   font-size: larger; }
+
+.blog_video {
+  margin-top: 10px;
+  width: 100%; }
+
+.dummy_tabs {
+  position: fixed;
+  width: 350px;
+  height: 400px; }
 
 .video {
   width: 100%;
@@ -175,7 +185,7 @@ ul, li {
     bottom: 0; }
 
 .jumbotron {
-  height: 100%;
+  height: 120%;
   background-color: white !important; }
 
 #navLinks {
